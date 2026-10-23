@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de CEP</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="container">
+        <h1>Consulta de CEP</h1>
+        <p>Digite um CEP para consultar o endereço.</p>
+
+        <form id="formulario">
+            <input
+                type="text"
+                id="cep"
+                placeholder="Ex.: 01001000"
+                maxlength="9"
+                required
+            >
+            <button type="submit">Buscar endereço</button>
+        </form>
+
+        <p id="mensagem" role="status"></p>
+
+        <section id="resultado" hidden>
+            <h2>Endereço encontrado</h2>
+            <p><strong>Rua:</strong> <span id="rua"></span></p>
+            <p><strong>Bairro:</strong> <span id="bairro"></span></p>
+            <p><strong>Cidade:</strong> <span id="cidade"></span></p>
+            <p><strong>Estado:</strong> <span id="estado"></span></p>
+        </section>
+    </main>
+</body>
+</html>
